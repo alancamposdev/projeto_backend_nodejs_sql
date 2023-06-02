@@ -37,15 +37,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   <br>
   * Clone o repositório no seu PC :
 
-  ``` git
+  ```git
   git clone https://github.com/alancamposdev/projeto_backend_nodejs_sql.git 
   ```  
   <br> 
-Para rodar o __FRONT END__ entre na pasta com o comando no terminal
-` cd projeto_backend_node_sql/frontend/portal-cpt`
+Para rodar o  __FRONT END__  entre na pasta com o comando no terminal ` cd projeto_backend_node_sql/frontend/portal-cpt `
 
 e use o comando 
-```
+```shell
 npm install ; npm run dev
 ``` 
 Irá iniciar o servidor do REACT. \
