@@ -41,13 +41,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   git clone https://github.com/alancamposdev/projeto_backend_nodejs_sql.git 
   ```  
   <br> 
-Para rodar o __FRONT END__ entre na pasta com o comando no terminal
-` cd projeto_backend_node_sql/frontend/portal-cpt`
+Para rodar o __FRONT END__ entre na pasta com o comando no terminal `cd projeto_backend_node_sql/frontend/portal-cpt`
+e use o comando: 
 
-e use o comando 
 ```
 npm install ; npm run dev
 ``` 
+
 Irá iniciar o servidor do REACT. \
 A aplicação pode ser acessada em http://localhost:5173/
 
@@ -60,7 +60,7 @@ Para rodar o __BACK END__ o servidor da API, no terminal entre na pasta `cd proj
 ``` 
 npm install ; npm start
 ```
-para rodar o servidor do EXPRESS/NODE.\
+Irá iniciar o servidor do EXPRESS/NODE.\
 A aplicação pode ser acessada em http://localhost:3000/
 
 
