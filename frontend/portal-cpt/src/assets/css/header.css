@@ -1,0 +1,48 @@
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#27598C;
+  color: var(--cor-texto);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_logo{
+  display: flex;
+  align-items: center;
+}
+.header_logo img{
+  width: 2rem;
+  line-height: 6rem;  
+}
+.header_logo span{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: .3rem;  
+}
+.header_nav ul{
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.header_nav ul li a{
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif; 
+
+}
+.header_nav ul li a:hover{
+  color: var(--cor-fundo-secundaria);
+}
+
+ /* Paletas de cores  */
+
+ /**
+
+
+ **/

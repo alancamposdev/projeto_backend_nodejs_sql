@@ -1,0 +1,48 @@
+.form{
+  display: flex;
+  flex-direction: column;   
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+}
+.form label{
+  display: block;
+  font-size: 1rem;
+  font-family: var(--font-padrao);
+  font-weight: 100;
+}
+.form input{  
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: var(--font-padrao);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.full_box{
+ 
+}
+.full_box input[type="checkbox"]{
+  display: inline-block;  
+  width: 1rem;
+  margin-right: .6rem;
+}
+.full_box > label{
+  display: inline-block;  
+}
+.form_duvidas{
+  font-family: var(--font-padrao);
+  font-weight: 100;
+  font-size: .9rem;
+}
+
+
+.form_duvidas a{
+  text-decoration:none;
+  color: var(--cor-fundo-primario);
+  
+}
+.form_duvidas a:hover{
+  text-decoration:underline;
+}

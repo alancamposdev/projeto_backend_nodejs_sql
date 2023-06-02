@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --font-padrao: 'Open Sans', sans-serif;
+  --cor-texto: #F4F6F5;
+  --cor-fundo-primaria:#27598C;
+  --cor-fundo-secundaria: #71A9C4;
+  --cor-botao: #100f10;
+  --cor-botao-hover: #242424;
+  --meu-gradient: linear-gradient(90deg, rgba(39,89,140,1) 0%, rgba(48,129,168,1) 100%);
+
+}
+body{
+  font-family: var(--font-padrao);
+  background-color: var(--cor-texto);
+
+}
+
+section{
+  margin: 2rem 0;
+  padding: 2rem;
+  min-height: 100vh;
+
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+

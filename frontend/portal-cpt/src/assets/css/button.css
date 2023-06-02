@@ -1,0 +1,17 @@
+.btn{
+  background-color: var(--cor-botao);
+  color: var(--cor-texto);
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: var(--cor-botao-hover);
+  color: lightgray;
+}
