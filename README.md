@@ -34,32 +34,33 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <br>
 
 ## 🚀 Como executar
-   
-  * Clone o repositório
-   
+  <br>
+  * Clone o repositório no seu PC :
 
-### Front-end
+  ``` git
+  git clone https://github.com/alancamposdev/projeto_backend_nodejs_sql.git 
+  ```  
+  <br> 
+Para rodar o __FRONT END__ entre na pasta com o comando no terminal
+` cd projeto_backend_node_sql/frontend/portal-cpt`
 
-Aplicação web estática usando _REACT_.
-
----
-
-Rodar a aplicação entre na pasta  `frontend/portal-cpt`  e de o comando no terminal:
+e use o comando 
 ```
- npm run dev
-```
+npm install ; npm run dev
+``` 
+Irá iniciar o servidor do REACT. \
 A aplicação pode ser acessada em http://localhost:5173/
 
-### Back-end
-
-Api REST com _NODE_.
 
 ---
 
-Rodar o servidor da API entre na pasta `backend/api-portal-cpt` e de o comando no terminal:
+<br>
+Para rodar o __BACK END__ o servidor da API, no terminal entre na pasta `cd projeto_backend_node_sql/backend/api-portal-cpt` e use comando: 
+
 ``` 
-npm start
+npm install ; npm start
 ```
+para rodar o servidor do EXPRESS/NODE.\
 A aplicação pode ser acessada em http://localhost:3000/
 
 
