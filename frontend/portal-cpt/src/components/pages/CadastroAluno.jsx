@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import ButtonSubmit from "./ButtonSubmit";
-import "../assets/css/form.css";
-import "../assets/css/global.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import ButtonSubmit from "../ButtonSubmit";
+import "../../assets/css/form.css";
+import "../../assets/css/global.css";
 
 const CadastroAluno = () => {
   const [nome, setNome] = useState("");
@@ -63,7 +63,7 @@ const CadastroAluno = () => {
               type="password"
               value={confirmarSenha}
               onChange={(e) => setConfirmarSenha(e.target.value)}
-              placeholder="Digite uma senha"
+              placeholder="Confirme a senha"
             />
           </label>
           <div className="full_box">

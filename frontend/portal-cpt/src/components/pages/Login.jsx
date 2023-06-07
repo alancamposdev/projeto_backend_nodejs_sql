@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import ButtonSubmit from "./ButtonSubmit";
-import "../assets/css/form.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import ButtonSubmit from "../ButtonSubmit";
+import "../../assets/css/form.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -19,7 +19,9 @@ const Login = () => {
     <>
       <Header />
       <section className="container">
+        
         <h2 className="title">Login</h2>
+
         <form onSubmit={handleLogin} className="form">
           <label>
             Email:
