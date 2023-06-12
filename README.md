@@ -28,7 +28,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [NodeJs]() _ para desenvolver a API.
 - [NPM - Node Package Manager ]() _ como gerenciador de pacotes.
-- [Express](https://expressjs.com/pt-br/) _ framework para as rotas
+    - Backend 
+      - [Express](https://expressjs.com/pt-br/) _ framework para as rotas
+      - [Nodemon](https://www.npmjs.com/package/nodemon) _ ferramenta para reiniciar o servidor automaticamente.
+      - [Dotenv](https://www.npmjs.com/package/dotenv) _ modulo para carregar as variaveis de ambiente em um arquivo `.env`
+      - [Mariadb](https://www.npmjs.com/package/mariadb) _ dependencia para conectar com o banco de dados MariaDB;
+      - [Sequelize](https://www.npmjs.com/package/sequelize) _ para modelagem do banco de dadosd
+
 - [React]() _ biblioteca JS para o frontend
 
 <br>
@@ -41,17 +47,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   git clone https://github.com/alancamposdev/projeto_backend_nodejs_sql.git 
   ```  
   <br> 
-<<<<<<< HEAD
-Para rodar o  __FRONT END__  entre na pasta com o comando no terminal ` cd projeto_backend_node_sql/frontend/portal-cpt `
+
+Para rodar o  _FRONT END_  entre na pasta com o comando no terminal ` cd projeto_backend_node_sql/frontend/portal-cpt `
 
 e use o comando 
 ```shell
-=======
-Para rodar o __FRONT END__ entre na pasta com o comando no terminal `cd projeto_backend_node_sql/frontend/portal-cpt`
-e use o comando: 
-
-```
->>>>>>> 2d466e7c860e53f1eb348d8cdbb7e4ee7e71a124
 npm install ; npm run dev
 ``` 
 
@@ -62,6 +62,7 @@ A aplicação pode ser acessada em http://localhost:5173/
 ---
 
 <br>
+
 Para rodar o __BACK END__ o servidor da API, no terminal entre na pasta `cd projeto_backend_node_sql/backend/api-portal-cpt` e use comando: 
 
 ``` 
@@ -73,13 +74,20 @@ A aplicação pode ser acessada em http://localhost:3000/
 
 <br>
 
-## 🛢 Diagrama do banco de dados
+## 🛢 Banco de dados
+
+banco de dados usado no projeto é o _Mariadb_ .
+
+Para a construção, mapeamento e atualização de esquemas de banco de dados com estrutura __Mapeamento objeto-relacional ORM__ usei o _SequelizeJS_ .
 
 ...
 
 <br>
 
 ## 📌 Rotas da aplicação
+
+_ http://localhost:3000/cursos \
+_ http://localhost:3000/usuarios
 
 ...
 
