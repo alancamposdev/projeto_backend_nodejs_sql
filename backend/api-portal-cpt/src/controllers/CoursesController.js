@@ -1,26 +1,41 @@
-const db = require('../models/database');
+//const db = require('../models/database');
 
 /******************************
  *   Mostra todos os Cursos  *
  ******************************/
 const getAllCourses = async (_, res) => {
+  res.send('Page Courses!')
   
-  try {
-    conn = await db.getConnection();
-    const result = await conn.query("SELECT * FROM tb_courses");
+  //try {
+    // conn = await db.getConnection();
+    // const result = await conn.query("SELECT * FROM tb_courses");
 
-    return res.status(200).json(result);
+    // return res.status(200).json(result);
+
+    //------------------//
+
+    // conn = await db.getConnection();
+    // const sql = "SELECT * FROM tb_courses";
+
+    // await conn.queryStream(sql, (err) => {
+    //   if (err) { 
+    //     console.log(err);
+    //     res.status(404).json({message: "Falha ao consultar os cursos: " + err});
+    //   };
+            
+    //   return res.status(200).json(result);
+    // });
 
 
-  } catch (err) {
+    //   } catch (err) {
 
-    return res.status(500).json({
-      message: "Falha ao consultar os cursos: " + err
-    });
+    //     return res.status(500).json({
+    //       message: "Falha ao consultar os cursos: " + err
+    //     });
 
-  } finally {
-    if (conn) conn.end();
-  }
+    //   } finally {
+    //     if (conn) conn.end();
+    //   }
 };
 
 /********************
@@ -28,30 +43,30 @@ const getAllCourses = async (_, res) => {
  ********************/
 const createCourse = async (req, res) => {
 
-  try {
-    conn = await db.getConnection();
+  // try {
+  //   conn = await db.getConnection();
     
-    const { name, description, workload, img, status } = req.body;
+  //   const { name, description, workload, img, status } = req.body;
 
-    const result = await conn.query(
-    "INSERT INTO tb_courses (name, description, workload, img, status ) VALUES (?, ?, ?, ?, ? )",
-      [name, description, workload, img, status]
-    );
+  //   const result = await conn.query(
+  //   "INSERT INTO tb_courses (name, description, workload, img, status ) VALUES (?, ?, ?, ?, ? )",
+  //     [name, description, workload, img, status]
+  //   );
 
-    return res.status(201).json(
-      {message: "Curso criado com sucesso! " + " - " + name + " ID: " + result.insertId }); 
+  //   return res.status(201).json(
+  //     {message: "Curso criado com sucesso! " + " - " + name + " ID: " + result.insertId }); 
 
     
 
-  } catch (err) {
+  // } catch (err) {
 
-    return res.status(500).json({
-      message: "Falha ao criar o curso: " + err
-    });
+  //   return res.status(500).json({
+  //     message: "Falha ao criar o curso: " + err
+  //   });
 
-  } finally {
-    if (conn) conn.end();
-   }
+  // } finally {
+  //   if (conn) conn.end();
+  //  }
 
 };
 
@@ -60,29 +75,30 @@ const createCourse = async (req, res) => {
  ***********************/
 const updateCourse = async (req, res) => {
  
-  try{
-    conn = await db.getConnection();
-    const { id } = req.params;
-    const { name, description, workload, img, status } = req.body;
+//   try{
+//     conn = await db.getConnection();
+//     const { id } = req.params;
+//     const { name, description, workload, img, status } = req.body;
 
-    const result = await conn.query(
-      "UPDATE tb_courses SET name = ?, description = ?, workload = ?, img = ?, status = ? WHERE id = ?",
-      [name, description, workload, img, status, id]
-    );
+//     const result = await conn.query(
+//       "UPDATE tb_courses SET name = ?, description = ?, workload = ?, img = ?, status = ? WHERE id = ?",
+//       [name, description, workload, img, status, id]
+//     );
 
-    return res.status(200).json(
-      {message: "Curso atualizado com sucesso!" + " - " + result.name + " ID: " + result.id });      
+//     return res.status(200).json(
+//       {message: "Curso atualizado com sucesso!" + " - " + result.name + " ID: " + result.id });      
 
-  } catch (err) {
+//   } catch (err) {
       
-      return res.status(500).json({
-        message: "Falha ao atualizar o curso: " + err
-      });
+//       return res.status(500).json({
+//         message: "Falha ao atualizar o curso: " + err
+//       });
   
-    }
-    finally {
-      if (conn) conn.end();
-     }
+//     }
+//     finally {
+//       if (conn) conn.end();
+//      }
+
 };
 
 /**********************
@@ -90,29 +106,29 @@ const updateCourse = async (req, res) => {
  **********************/
 const deleteCourse = async (req, res) => {
   
-  try {
-    conn = await db.getConnection();
-    const { id } = req.params;
+  // try {
+  //   conn = await db.getConnection();
+  //   const { id } = req.params;
 
-    const result = await conn.query(
-      "DELETE FROM tb_courses WHERE id = ?",
-      [id]
-    );
+  //   const result = await conn.query(
+  //     "DELETE FROM tb_courses WHERE id = ?",
+  //     [id]
+  //   );
 
-    return res.status(200).json(
-      {message: "Curso deletado com sucesso!"}); 
+  //   return res.status(200).json(
+  //     {message: "Curso deletado com sucesso!"}); 
 
     
 
-  } catch (err) {
+  // } catch (err) {
 
-    return res.status(500).json({
-      message: "Falha ao deletar o curso: " + err
-    });
+  //   return res.status(500).json({
+  //     message: "Falha ao deletar o curso: " + err
+  //   });
 
-  } finally {
-    if (conn) conn.end();
-   }
+  // } finally {
+  //   if (conn) conn.end();
+  //  }
 
 };
 
