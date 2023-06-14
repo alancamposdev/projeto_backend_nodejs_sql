@@ -3,7 +3,7 @@ import "../assets/css/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer shapedividers">
       <div className="footer_heading">
         <p>
           <img src="../../public/imgs/logo.png" /> CPT - Portal Conhecimento

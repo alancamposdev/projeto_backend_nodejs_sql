@@ -20,6 +20,9 @@
 Um projeto de uma organização filantrópica fictícia, que pretende levar conhecimento
 sobre diversas áreas às pessoas que buscam entrar no mercado de trabalho.
 
+
+![imagem da home](./frontend/portal-cpt/public/imgs/home.png)
+
 <br>
 
 ## ✨ Tecnologias
@@ -33,7 +36,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
       - [Nodemon](https://www.npmjs.com/package/nodemon) _ ferramenta para reiniciar o servidor automaticamente.
       - [Dotenv](https://www.npmjs.com/package/dotenv) _ modulo para carregar as variaveis de ambiente em um arquivo `.env`
       - [Mariadb](https://www.npmjs.com/package/mariadb) _ dependencia para conectar com o banco de dados MariaDB;
-      - [Sequelize](https://www.npmjs.com/package/sequelize) _ para modelagem do banco de dadosd
+      - [Sequelize](https://www.npmjs.com/package/sequelize) _ para modelagem do banco de dados.
 
 - [React]() _ biblioteca JS para o frontend
 
@@ -65,7 +68,7 @@ A aplicação pode ser acessada em http://localhost:5173/
 
 Para rodar o __BACK END__ o servidor da API, no terminal entre na pasta `cd projeto_backend_node_sql/backend/api-portal-cpt` e use comando: 
 
-``` 
+```shell 
 npm install ; npm start
 ```
 Irá iniciar o servidor do EXPRESS/NODE.\
@@ -76,7 +79,7 @@ A aplicação pode ser acessada em http://localhost:3000/
 
 ## 🛢 Banco de dados
 
-banco de dados usado no projeto é o _Mariadb_ .
+Banco de dados usado no projeto é o _Mariadb_ .
 
 Para a construção, mapeamento e atualização de esquemas de banco de dados com estrutura __Mapeamento objeto-relacional ORM__ usei o _SequelizeJS_ .
 

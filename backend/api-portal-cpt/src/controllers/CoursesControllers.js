@@ -1,10 +1,10 @@
-//const db = require('../models/database');
+const { Courses }= require('../models/Courses');
 
 /******************************
  *   Mostra todos os Cursos  *
  ******************************/
 const getAllCourses = async (_, res) => {
-  res.send('Page Courses!')
+  res.json( Courses.findAll() );
   
   //try {
     // conn = await db.getConnection();

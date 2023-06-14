@@ -4,7 +4,7 @@
   "description": "projeto full-stack",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   "license": "ISC",
   "homepage": "https://github.com/alancamposdev/projeto_backend_nodejs_sql#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.1.0",
     "express": "^4.18.2",
     "mariadb": "^3.1.2",
